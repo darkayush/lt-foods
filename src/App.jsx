@@ -15,6 +15,16 @@ import RiskManagement from './Pages/RiskManagement';
 import StakeholderEngagement from './Pages/StakeholderEngagement';
 import MaterialityAssessment from './Pages/MaterialityAssessment';
 import VCM from './Pages/VCM';
+import OurFinancials from './Pages/OurFinancials';
+import OurESG from './Pages/OurESG';
+import FinancialCapital from './Pages/FinancialCapital';
+import BOD from './Pages/BOD';
+import SeniorManagement from './Pages/SeniorManagement';
+import ProfileOfAdvisors from './Pages/ProfileOfAdvisors';
+import CorporateInfo from './Pages/CorporateInfo';
+import ManufacturedCapital from './Pages/ManufacturedCapital';
+import IntellectualCapital from './Pages/IntellectualCapital';
+import NaturalCapital from './Pages/NaturalCapital';
 
 const App = () => {
   return (
@@ -35,6 +45,16 @@ const App = () => {
             <Route path='/stakeholder-engagement' element={<StakeholderEngagement />} />
             <Route path='/materiality-assessment' element={<MaterialityAssessment />} />
             <Route path='/value-creation-model' element={<VCM />} />
+            <Route path='our-financials' element={<OurFinancials />} />
+            <Route path='/our-esg-goals-and-targets' element={<OurESG />} />
+            <Route path='/financial-capital' element={<FinancialCapital />} />
+            <Route path='/manufactured-capital' element={<ManufacturedCapital />} />
+            <Route path='/intellectual-capital' element={<IntellectualCapital />} />
+            <Route path='natural-capital' element={<NaturalCapital />} />
+            <Route path='/board-of-directors' element={<BOD />} />
+            <Route path='/senior-management-personnel' element={<SeniorManagement />} />
+            <Route path='/profile-of-advisors' element={<ProfileOfAdvisors />} />
+            <Route path='/corporate-information' element={<CorporateInfo />} />
           </Routes>
           <Footer />
         </main>
