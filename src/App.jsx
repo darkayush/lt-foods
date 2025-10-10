@@ -25,6 +25,8 @@ import CorporateInfo from './Pages/CorporateInfo';
 import ManufacturedCapital from './Pages/ManufacturedCapital';
 import IntellectualCapital from './Pages/IntellectualCapital';
 import NaturalCapital from './Pages/NaturalCapital';
+import HumanCapital from './Pages/HumanCapital';
+import SocialCapital from './Pages/SocialCapital';
 
 const App = () => {
   return (
@@ -51,6 +53,8 @@ const App = () => {
             <Route path='/manufactured-capital' element={<ManufacturedCapital />} />
             <Route path='/intellectual-capital' element={<IntellectualCapital />} />
             <Route path='natural-capital' element={<NaturalCapital />} />
+            <Route path='/human-capital' element={<HumanCapital />} />
+            <Route path='/social-and-relationship-capital' element={<SocialCapital />} />
             <Route path='/board-of-directors' element={<BOD />} />
             <Route path='/senior-management-personnel' element={<SeniorManagement />} />
             <Route path='/profile-of-advisors' element={<ProfileOfAdvisors />} />

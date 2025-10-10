@@ -1,6 +1,7 @@
 import React from 'react'
 import { FaArrowUp } from "react-icons/fa";
 
+// This component is no longer used for differentiators but kept as it was in the original code
 const IconPlaceholder = ({ Icon, className }) => (
     <div className={`w-12 h-12 flex items-center justify-center rounded-full bg-[#fcb814] text-white ${className}`}>
         {Icon}
@@ -23,58 +24,58 @@ const coreValuesData = [
     {
         title: 'Consumer Centricity',
         description: 'We exist to create delightful meal experiences for families while strengthening their bonds. We continuously strive to provide them with the goodness of nature, nurtured and brought to them through our responsibly nutritious, health-focused meal experiences, quality and organic products.',
-        imagePath: '/assets/icons/consumer_centricity.png',
+        imagePath: '/AboutUs/v1.png',
         titleColor: '#a31f5e',
         descriptionColor: '#57585b'
     },
     {
         title: 'Commitment To Excellence',
         description: 'We believe in staying committed to being the best at doing what is right. For us, excellence is a responsibility that we aim to follow every day, ensuring it translates into delightful and sustainable products.',
-        imagePath: '/assets/icons/excellence.png',
+        imagePath: '/AboutUs/v2.png',
         titleColor: '#a31f5e',
         descriptionColor: '#57585b'
     },
     {
         title: 'Continuous Innovation',
         description: 'Continuous innovation that elevates consumer experiences and caters to emerging consumer needs is at the core of our organisation. We are on a journey to innovate at every level across our value chain, from farming, sustainable processes, packaging and products to newer food experiences in line with the ever-changing consumer needs and preferences.',
-        imagePath: '/assets/icons/innovation.png',
+        imagePath: '/AboutUs/v3.png',
         titleColor: '#a31f5e',
         descriptionColor: '#57585b'
     },
     {
         title: 'Integrity',
         description: 'We believe in doing what is right and continuously strive to work with trust and transparency. By honouring our commitments, we aim to embody our principles when working with consumers, partners, employees and all other stakeholders.',
-        imagePath: '/assets/icons/integrity.png',
+        imagePath: '/AboutUs/v4.png',
         titleColor: '#a31f5e',
         descriptionColor: '#57585b'
     },
     {
         title: 'Respect For People',
         description: 'We believe in treating our consumers, partners, employees and all the other stakeholders with mutual trust and respect. We strive to follow fair practices and nurture fulfilling and amicable relationships with all our stakeholders.',
-        imagePath: '/assets/icons/respect.png',
+        imagePath: '/AboutUs/v5.png',
         titleColor: '#a31f5e',
         descriptionColor: '#57585b'
     },
     {
         title: 'Responsibility',
         description: 'We are responsible for the betterment and growth of our stakeholders and are responsive towards addressing consumers issues proactively. We constantly strive to take measures to ensure safety and sustainability in all our processes and systems.',
-        imagePath: '/assets/icons/responsibility.png',
+        imagePath: '/AboutUs/v6.png',
         titleColor: '#a31f5e',
         descriptionColor: '#57585b'
     },
 ];
 
 const differentiators = [
-    { title: 'Sustainable Growth', icon: '' },
-    { title: 'Strong Leading Brands', icon: '' },
-    { title: 'Global Supply Chain', icon: '' },
-    { title: 'Consumer Centric Products', icon: '' },
-    { title: 'Excellence in Operations', icon: '' },
-    { title: 'Ethical Business Practices', icon: '' },
-    { title: 'Integrated Business Model', icon: '' },
-    { title: 'A Culture of Ownership', icon: '' },
-    { title: 'Investment in Innovation', icon: '' },
-    { title: "Stakeholder's Value Creation", icon: '' },
+    { title: 'Sustainable Growth', icon: '/AboutUs/y1.png' },
+    { title: 'Strong Leading Brands', icon: '/AboutUs/y2.png' },
+    { title: 'Global Supply Chain', icon: '/AboutUs/y3.png' },
+    { title: 'Consumer Centric Products', icon: '/AboutUs/y4.png' },
+    { title: 'Excellence in Operations', icon: '/AboutUs/y5.png' },
+    { title: 'Ethical Business Practices', icon: '/AboutUs/y6.png' },
+    { title: 'Integrated Business Model', icon: '/AboutUs/y7.png' },
+    { title: 'A Culture of Ownership', icon: '/AboutUs/y8.png' },
+    { title: 'Investment in Innovation', icon: '/AboutUs/y9.png' },
+    { title: "Stakeholder's Value Creation", icon: '/AboutUs/y10.png' },
 ];
 
 const AboutUs = () => {
@@ -271,9 +272,11 @@ const AboutUs = () => {
                         <div className='mt-8 grid grid-cols-1 sm:grid-cols-3 gap-x-10 gap-y-6'>
                             {differentiators.map((item, index) => (
                                 <div key={index} className='flex items-center space-x-4 p-2'>
-                                    {/* Icon Placeholder */}
+                                    {/* Updated to use img tag with dynamic path and existing styling wrapper */}
                                     <div className='flex-shrink-0'>
-                                        <IconPlaceholder className='text-2xl font-bold' Icon={item.icon} />
+                                        <div className='w-12 h-12 flex items-center justify-center rounded-full text-white text-2xl font-bold'>
+                                            <img src={item.icon} alt={item.title} className='w-15 h-15 object-contain' />
+                                        </div>
                                     </div>
 
                                     {/* Text Content */}
